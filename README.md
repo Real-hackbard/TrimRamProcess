@@ -2,7 +2,7 @@
 
 "Trim" in the context of computer memory (RAM) refers to a process that reclaims unused memory, making it available for other processes. It's particularly relevant for Solid State Drives (SSDs) where it helps maintain performance and longevity. In the context of RAM, it's typically used to describe the process of releasing memory back to the operating system, often involving calls to malloc_trim() in environments like Vertica. 
 
-```
+```ruby
 Compiler    : Delphi10 Seattle, 10.1 Berlin, 10.2 Tokyo, 10.3 Rio, 10.4 Sydney, 11 Alexandria, 12 Athens
 Components  : None
 Discription : Reduce Usage Process in Memory to Minimum
