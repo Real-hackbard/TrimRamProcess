@@ -16,6 +16,12 @@
 
 </br>
 
+Memory architecture describes the methods used to implement electronic computer data storage in a manner that is a combination of the fastest, most reliable, most durable, and least expensive way to store and retrieve information. Depending on the specific application, a compromise of one of these requirements may be necessary in order to improve another requirement. Memory architecture also explains how binary digits are converted into electric signals and then stored in the memory cells. And also the structure of a memory cell.
+
+For example, [dynamic memory](https://en.wikipedia.org/wiki/Memory_management) is commonly used for [primary data storage](https://en.wikipedia.org/wiki/Computer_data_storage) due to its fast access speed. However dynamic memory must be repeatedly refreshed with a surge of current dozens of time per second, or the stored data will decay and be lost. [Flash memory](https://en.wikipedia.org/wiki/Flash_memory) allows for long-term storage over a period of years, but it is much slower than dynamic memory, and the static memory storage cells wear out with frequent use.
+
+</br>
+
 ## 1. RAM and TRIM (or Memory Trimming):
 
 ### Purpose:
