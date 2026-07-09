@@ -53,7 +53,7 @@ Because they can exhaust available system memory as an application runs, memory 
 
 </br>
 
-# Code example
+# :speech_balloon: Code example
 ```pascal
 { exact execution state of an application actively controlled
   by the integrated debugger }
