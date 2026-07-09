@@ -50,3 +50,54 @@ In [computer science](https://en.wikipedia.org/wiki/Computer_science), a memory 
 A related concept is the "space leak", which is when a program consumes excessive memory but does eventually release it.
 
 Because they can exhaust available system memory as an application runs, memory leaks are often the cause of or a contributing factor to [software aging](https://en.wikipedia.org/wiki/Software_aging).
+
+# Code example
+```pascal
+{ exact execution state of an application actively controlled
+  by the integrated debugger }
+procedure TForm1.DebugProcessStatus(s: string);
+var
+  pmc: PPROCESS_MEMORY_COUNTERS;
+  cb: Integer;
+  MemStat: tMemoryStatus;
+  NewWorkingMemory, OldWorkingMemory : Longint;
+  l_nSize: Cardinal;
+  hProcess: THandle;
+  ProcessID: DWORD;
+  MyHandle: THandle;
+  Struct: TProcessEntry32;
+  Status: TMemoryStatusEx;
+begin
+  // returns the total memory size (in bytes)
+  MemStat.dwLength := SizeOf(MemStat);
+  // Retrieve system information regarding physical and virtual memory usage.
+  GlobalMemoryStatus(MemStat);
+
+  // Get the used memory for the current process
+  cb := SizeOf(TProcessMemoryCounters);
+
+  // transmit information
+  GetMem(pmc, cb);
+  pmc^.cb := cb;
+
+  // transmission of the processed bytes and the lost ones
+  if GetProcessMemoryInfo(GetCurrentProcess(), pmc, cb) then
+  begin
+    NewWorkingMemory           := Longint(pmc^.WorkingSetSize);
+    Label27.Caption := FormatFloat('###,###', NewWorkingMemory / 1024) + ' bytes';
+    Label28.Caption := FormatFloat('###,###', (NewWorkingMemory - OldWorkingMemory) / 1024) + ' bytes';
+    OldWorkingMemory := NewWorkingMemory;
+  end;
+
+  // pass the bytes of the progress bars
+  if (GetProcessMemorySize(Edit1.Text, l_nSize)) then
+  begin
+      Progressbar9.Max := l_nSize div 1000;
+      Progressbar10.Max := l_nSize div 1000;
+      Progressbar9.Position := (l_nSize div 1000) - (NewWorkingMemory div 1024);
+      Progressbar10.Position := ((OldWorkingMemory) div 10000);
+  end;
+  // end PPROCESS_MEMORY_COUNTERS
+  FreeMem(pmc);
+end;
+````
