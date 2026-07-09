@@ -8,6 +8,7 @@ currently being supported with security updates.
 | Version | Supported          |
 | ------- | ------------------ |
 | 1.0.x   | :white_check_mark: |
+| 1.1.x   | :white_check_mark: Add, CPU & CPU current process usgae measurement; Get Memory Leaks; Stop complete measurement; Set Priority Prxess |
 
 ## Reporting a Vulnerability
 
