@@ -51,6 +51,8 @@ A related concept is the "space leak", which is when a program consumes excessiv
 
 Because they can exhaust available system memory as an application runs, memory leaks are often the cause of or a contributing factor to [software aging](https://en.wikipedia.org/wiki/Software_aging).
 
+</br>
+
 # Code example
 ```pascal
 { exact execution state of an application actively controlled
