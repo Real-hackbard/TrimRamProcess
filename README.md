@@ -29,7 +29,7 @@ For example, [dynamic memory](https://en.wikipedia.org/wiki/Memory_management) i
 ### Purpose:
 In the context of RAM, memory trimming (or trimming memory) refers to the process of reclaiming unused memory from a process's allocated memory space and returning it to the operating system.
 
-* ### Mechanism:
+### Mechanism:
 A memory poller, for example in Vertica, might monitor memory usage and, when a certain threshold is reached, trigger malloc_trim() to release unused memory from the process's heap.
 
 ### Example:
