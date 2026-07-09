@@ -13,7 +13,7 @@
 
 </br>
 
-![TrimRamProcess](https://github.com/user-attachments/assets/e1c22ca5-7f66-448a-a58f-d347d5e2bf9f)
+<img src="https://github.com/user-attachments/assets/0c6d2802-3801-41f4-908c-4fef85b6ea18" />
 
 </br>
 
