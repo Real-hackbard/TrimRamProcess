@@ -1,4 +1,4 @@
-# TrimRamProcess:
+# :computer: TrimRamProcess:
 
 "Trim" in the context of computer memory (RAM) refers to a process that reclaims unused memory, making it available for other processes. It's particularly relevant for Solid State Drives (SSDs) where it helps maintain performance and longevity. In the context of RAM, it's typically used to describe the process of releasing memory back to the operating system, often involving calls to malloc_trim() in environments like Vertica. 
 
