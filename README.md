@@ -16,6 +16,7 @@
 <img src="https://github.com/user-attachments/assets/0c6d2802-3801-41f4-908c-4fef85b6ea18" />
 
 </br>
+</br>
 
 Memory architecture describes the methods used to implement electronic computer data storage in a manner that is a combination of the fastest, most reliable, most durable, and least expensive way to store and retrieve information. Depending on the specific application, a compromise of one of these requirements may be necessary in order to improve another requirement. Memory architecture also explains how binary digits are converted into electric signals and then stored in the memory cells. And also the structure of a memory cell.
 
