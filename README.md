@@ -24,7 +24,7 @@ For example, [dynamic memory](https://en.wikipedia.org/wiki/Memory_management) i
 
 </br>
 
-## 1. RAM and TRIM (or Memory Trimming):
+## 1. RAM & TRIM (or Memory Trimming):
 
 ### Purpose:
 In the context of RAM, memory trimming (or trimming memory) refers to the process of reclaiming unused memory from a process's allocated memory space and returning it to the operating system.
