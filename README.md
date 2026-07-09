@@ -43,3 +43,10 @@ RAM Process (different meaning):
 In some contexts, "RAM process" can refer to the mechanical pressing of ceramic shapes using permeable dies, often with gypsum cement. 
 MemoryExtensions.Trim (C#):
 The MemoryExtensions.Trim() method in C# is used to remove leading and trailing whitespace from a character memory region. 
+
+# Memory leak
+In [computer science](https://en.wikipedia.org/wiki/Computer_science), a memory leak is a type of [resource leak](https://en.wikipedia.org/wiki/Resource_leak) that occurs when a computer program incorrectly manages [memory allocations](https://en.wikipedia.org/wiki/Memory_management) in a way that memory which is no longer needed is not released. A memory leak may also happen when an object is stored in memory but cannot be accessed by the running code (i.e. [unreachable memory](https://en.wikipedia.org/wiki/Unreachable_memory)). A memory leak has symptoms similar to a number of other problems and generally can only be diagnosed by a programmer with access to the program's source code.
+
+A related concept is the "space leak", which is when a program consumes excessive memory but does eventually release it.
+
+Because they can exhaust available system memory as an application runs, memory leaks are often the cause of or a contributing factor to [software aging](https://en.wikipedia.org/wiki/Software_aging).
